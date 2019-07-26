@@ -1,0 +1,229 @@
+/* Custom Style Sheet */
+
+body {
+    padding-top: 75px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(87, 87, 87);
+    background-color: #e3e7eb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    transition: .5s;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.subheading {
+    text-transform: uppercase;
+}
+
+section {
+    width: 95%;
+    margin: auto auto 20px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.social-icons i {
+    font-size: 40px;
+    padding: 0 40px 20px 40px;
+    transition: .5s;
+}
+
+.social-icons i:hover {
+    filter: brightness(120%);
+    transform: scale(1.2);
+}
+
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+}
+
+.card img {
+    filter: brightness(90%);
+    transition: .5s ease-in-out;
+}
+
+.card img:hover {
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
+
+.card a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(87, 87, 87);
+}
+
+.card a:hover {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+}
+
+.card .btn-primary {
+    color: white !important;
+}
+
+/* .bgimage {
+    position: relative;
+}
+
+.bgimage img {
+    width: 100%;
+    filter: brightness(100%);
+    transition: .5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.bgimage img:hover {
+    transform: scale(1.01);
+} */
+
+.img-container{
+    position:relative;
+    display:inline-block;
+}
+.img-container .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #2c70af;
+    opacity:0;
+    transition:opacity 500ms ease-in-out;
+}
+.img-container:hover .overlay{
+    opacity:0.9;
+}
+.overlay span{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+}
+
+.download {
+    font-size: 150px;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.download:hover {
+    transform: scale(1.2);
+    color: #41a3ff;
+}
+
+/* COLOUR OVERRIDES */
+.bg-primary {
+    background-color: #235789 !important;
+}
+
+.text-primary {
+    color: #235789 !important;
+}
+
+.subheading a {
+    color: #235789;
+}
+
+.social-icons i {
+    color: #235789;
+}
+
+.btn-primary {
+    background-color: #235789;
+    border-color: #235789;
+}
+
+.btn-primary:hover {
+    background-color: #376693;
+    border-color: #376693;
+}
+
+/* MEDIA */
+@media (min-width: 992px) {
+    body {
+      padding-top: 0;
+      padding-left: 17rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh;
+    }
+    #sideNav .navbar-brand {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto auto 0;
+      padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+      max-width: 10rem;
+      max-height: 10rem;
+      border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+    #sideNav .navbar-collapse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      width: 100%;
+      margin-bottom: auto;
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+      display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+      display: block;
+    }
+    .img-container {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+
